@@ -100,7 +100,9 @@ Data cleaning and preparation process carried out on the data include:
 - Build a Power BI dashboard that visualizes key customer segments, 
 cancellations, and subscription trends. Include slicers for interactive analysis
 
-## EXCEL
+## ANALYSIS AND INSIGHTS
+
+### EXCEL
 
 ![image](https://github.com/user-attachments/assets/bd2c2b0e-618b-414f-a5e1-97d313419c43)
 
@@ -129,6 +131,12 @@ This regional pattern reflects customer segmentation. Marketing strategies can b
 
 ![image](https://github.com/user-attachments/assets/472af644-1195-4152-99de-c44a135ca28f)
 
+**TOTAL REVENUE**
+
+- 2022 Revenue: 40,538,438
+- 2023 Revenue: 27,001,737
+- Grand Total:  67,540,175
+  
 REGIONAL PERFORMANCE
 
 **The East region** is the top performer, with revenue slightly below 17 million. This indicates a strong customer base with high engagement. Marketing efforts here are yielding good returns, and there may be an opportunity to introduce premium offerings or bundled services to increase revenue further.
@@ -139,114 +147,157 @@ REGIONAL PERFORMANCE
 
 While the East and South regions are driving most of the revenue, the North and West regions show limited performance. A targeted approach could help balance revenue streams.
 
-**FINDINGS FROM REVENUE GENERATED IN EACH REGION EACH YEAR**
+**FINDINGS FROM REVENUE GENERATED IN EACH REGION PER YEAR**
 
 ![image](https://github.com/user-attachments/assets/751a770d-ade4-4caf-899c-ddbd7fcf591f)
 
-All regions (East, North, South, and West) show consistent revenue contributions across 2022 and 2023. This indicates steady subscription engagement and customer retention. Revenue figures for 2023 remain strong, demonstrating continued growth and retention across all regions. This trend suggests that the current subscription model is effective, but regional-specific marketing strategies can further boost performance. If positive trends continue in 2023, a consideration for scaling marketing investments in high-performing regions (East and South) while restructuring campaigns in underperforming ones (North and West) is highly recommended.
+2022 contributed 60% of total revenue, while 2023 dropped to 40%. There’s a noticeable decline in revenue between the two years, which could indicate lower customer engagement, reduced subscriptions, or external market challenges.
+
+**RENEWED SUBSCRIPTION INPUT WITHIN THE FOCAL YEAR (2022-2023):**
+
+Total Revenue: 23,720,255
+
+Basic Plan Revenue: 16,967,285
+
+East Region: 10,242,555
+
+North Region: 6,724,730
+
+Standard Plan (West Region): 6,752,970
+
+The East region is a key driver for the Basic plan revenue in 2022, but it did not grow into 2023. Both North and East regions maintain a steady performance, but without any noticeable increase between the years. West region’s Standard plan revenue (6.75M) remains constant across the years, showing a stable but non-growing base.
+
+**CANCELLED SUBSCRIPTION INPUT WITHIN THE FOCAL YEAR (2022-2023):**
+
+Total Revenue: 16,818,183
+
+Basic Plan (North Region): 3,365,221
+
+Premium Plan (South Region): 10,126,800
+
+Standard Plan (West Region): 3,326,162
+
+Premium Plan in the South region drives the majority of the Cancelled subscription revenue, showing a concentration of high-value customers. This segment remains unchanged in 2023 with identical revenue, which may indicate that the customer base is consistent, but growth opportunities may be limited.
+Basic plan in the North region remains stable, generating the same revenue across 2022 and 2023, highlighting a lack of churn but also no expansion.
+
+**YEAR OVER YEAR TREND (2022 - 2023)**
+
+No growth was recorded across all the major segments and regions from 2022 to 2023. The Premium plan in the South region maintained 10.1M revenue in both years.
+Standard plan in the West region stayed flat at 6.75M (RENEWED) and 3.32M (CANCELLED) across both years.
+The Basic plan in the North showed no revenue growth from 3.36M between 2022 and 2023.
+
+Several segments remained unchanged in revenue from 2022 to 2023. This suggests no net new customers or reduced customer acquisition efforts in these regions and plans.
+
+The Premium plan in South is a key revenue driver, but it didn’t grow between 2022 and 2023. There’s an opportunity to retain and upsell existing customers while expanding premium offerings.
+
+East and North regions generate significant revenue through Basic plans but lack growth. These regions may benefit from targeted marketing to drive subscription upgrades or cross-sell Standard/Premium plans.
+
+The West region maintains stable performance across both Standard and Basic plans. This is good, but it indicates a need for innovation or new campaigns to drive growth.
+
+All regions (East, North, South, and West) show consistent revenue contributions across 2022 and 2023.
 
 **FINDINGS FROM PERCENTAGE RETENTION AND TERMINATION**
 
 ![image](https://github.com/user-attachments/assets/b89323b9-7123-46a0-b0cf-fcdf9492c33e)
 
 
-HIGHER RETENTION RATE FOR BASIC
+**HIGHER RETENTION RATE FOR BASIC**
 
 Basic plans show a high retention rate based on more FALSE values. Customers likely find the Basic plan affordable and sustainable, leading to fewer cancellations. However, this could also reflect customers sticking to lower-tier services rather than upgrading.
 
-HIGHER TERMINATION RATE FOR PREMIUM
+**HIGHER TERMINATION RATE FOR PREMIUM**
 
 Premium subscriptions have more TRUE (canceled) values, indicating higher termination rates. This suggests that customers may find the premium offerings too costly or not meeting their expectations. Churn management efforts, such as offering discounts or personalized customer engagement, could help retain high-value customers.
 
-BALANCED RATE FOR STANDARD
+**BALANCED RATE FOR STANDARD**
 
 Standard plans appear to have a moderate balance between TRUE and FALSE, indicating mixed retention trends. Some customers may view the Standard plan as a good compromise between cost and value, while others may either downgrade to Basic or upgrade to Premium. Keeping the Standard plan differentiated and competitive can help stabilize churn.
 
-## SQL
+### SQL
 
 ### RETRIEVING DATA FROM SQL USING QUERIES
 
 Data loaded into SQL were retrieved to gain meaningful insight into customer trend and regional performance by writing corresponding queries. The below are all queries used to extract data
 
-'' *SELECT * FROM [CUSTOMER DATA CSV]*
+`*SELECT * FROM [CUSTOMER DATA CSV]*`
 
 **TOTAL NUMBER OF CUSTOMERS FROM EACH REGION**
 
 NORTH
 
-'' *SELECT COUNT(CUSTOMERNAME) AS TOTAL_NORTHERN_CUSTOMERS 
+`*SELECT COUNT(CUSTOMERNAME) AS TOTAL_NORTHERN_CUSTOMERS 
 FROM [dbo].[CUSTOMER DATA CSV] 
-WHERE [REGION] = 'NORTH'*
+WHERE [REGION] = 'NORTH'*`
 
 -  TOTAL_NORTHERN_CUSTOMERS  8433
 
 SOUTH
 
-'' *SELECT COUNT(CUSTOMERNAME) AS TOTAL_SOUTHERN_CUSTOMERS 
+`*SELECT COUNT(CUSTOMERNAME) AS TOTAL_SOUTHERN_CUSTOMERS 
 FROM [dbo].[CUSTOMER DATA CSV] 
-WHERE [REGION] = 'SOUTH'*
+WHERE [REGION] = 'SOUTH'*`
 
 - TOTAL_SOUTHERN_CUSTOMERS  8446
 
 EAST
 
-'' *SELECT COUNT(CUSTOMERNAME) AS TOTAL_EASTERN_CUSTOMERS 
+`*SELECT COUNT(CUSTOMERNAME) AS TOTAL_EASTERN_CUSTOMERS 
 FROM [dbo].[CUSTOMER DATA CSV] 
-WHERE [REGION] = 'EAST'*
+WHERE [REGION] = 'EAST'*`
 
 - TOTAL_EASTERN_CUSTOMERS  8488
 
 WEST
 
-'' *SELECT COUNT(CUSTOMERNAME) AS TOTAL_WESTERN_CUSTOMERS 
+`*SELECT COUNT(CUSTOMERNAME) AS TOTAL_WESTERN_CUSTOMERS 
 FROM [dbo].[CUSTOMER DATA CSV] 
-WHERE [REGION] = 'WEST'*
+WHERE [REGION] = 'WEST'*`
 
 - TOTAL_WESTERN_CUSTOMERS  8420
 
 
 **MOST POPULAR SUBSCRIPTION TYPE**
 
-'' *SELECT [SubscriptionType], COUNT(REGION) AS MOST_POPULAR_SUBSCRIPTION_TYPE 
+`*SELECT [SubscriptionType], COUNT(REGION) AS MOST_POPULAR_SUBSCRIPTION_TYPE 
 FROM [dbo].[CUSTOMER DATA CSV]
 GROUP BY [SubscriptionType]
-ORDER BY 2 DESC*
+ORDER BY 2 DESC*`
 
 - Basic 	16921
 
 **CUSTOMERS WITH SUBSCRIPTION LESS THAN 6 MONTHS**
 
-'' *SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_LESS_6_MONTHS
+`*SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_LESS_6_MONTHS
 FROM [dbo].[CUSTOMER DATA CSV]
 WHERE [SUBSCRIPTION_PERIOD] < 183
 GROUP BY [CUSTOMERNAME]
-ORDER BY 2 DESC*
+ORDER BY 2 DESC*`
 
 -  NIL 
 
 **AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS**
 
-'' *SELECT AVG(SUBSCRIPTION_PERIOD) AS AVG_SUB
-FROM [dbo].[CUSTOMER DATA CSV]*
+`*SELECT AVG(SUBSCRIPTION_PERIOD) AS AVG_SUB
+FROM [dbo].[CUSTOMER DATA CSV]*`
 
 - 365
 
 **CUSTOMERS WITH SUBSCRIPTION LONGER THAN 12 MONTHS**
 
-'' *SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_ABOVE_12_MONTHS
+`*SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_ABOVE_12_MONTHS
 FROM [dbo].[CUSTOMER DATA CSV]
 WHERE [SUBSCRIPTION_PERIOD] > 366
 GROUP BY [CUSTOMERNAME]
-ORDER BY 2 DESC*
+ORDER BY 2 DESC*`
 
 - NIL
 
 **TOTAL REVENUE BY SUBSCRIPTION TYPE**
 
-'' *SELECT [SubscriptionType], SUM(Revenue) AS TOTAL_REVENUE_BY_SUBSCRIPTION_TYPE 
+`*SELECT [SubscriptionType], SUM(Revenue) AS TOTAL_REVENUE_BY_SUBSCRIPTION_TYPE 
 FROM [dbo].[CUSTOMER DATA CSV]
 GROUP BY [SubscriptionType]
-ORDER BY 2 DESC*
+ORDER BY 2 DESC*`
 
 - Basic	33776735
 - Premium	16899064
@@ -254,11 +305,11 @@ ORDER BY 2 DESC*
 
 **TOP 3 REGION BY SUBSCRIPTION CANCELLATION**
 
-'' *SELECT TOP 3 [Region], COUNT(Canceled) AS TOP_3_CANCELLATION 
+`*SELECT TOP 3 [Region], COUNT(Canceled) AS TOP_3_CANCELLATION 
 FROM [dbo].[CUSTOMER DATA CSV]
 WHERE [Canceled] = 'TRUE'
 GROUP BY [Region]
-ORDER BY 2 DESC*
+ORDER BY 2 DESC*`
 
 - North	5067
 - South	5064
@@ -266,17 +317,17 @@ ORDER BY 2 DESC*
 
 **TOTAL NUMBER OF ACTIVE SUBSCRIPTION**
 
-'' *SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
+`*SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
 from [dbo].[CUSTOMER DATA CSV]
-WHERE [Canceled] = 'FAlse'*
+WHERE [Canceled] = 'FAlse'*`
 
 - 18612
 
 **TOTAL NUMBER OF CANCELED SUBSCRIPTION**
 
-'' *SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
+`*SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
 from [dbo].[CUSTOMER DATA CSV]
-WHERE [Canceled] = 'TRUE'*
+WHERE [Canceled] = 'TRUE'*`
 
 -  15175
 
@@ -287,66 +338,76 @@ WHERE [Canceled] = 'TRUE'*
 
 **FINDINGS FROM THE DATA RETRIEVED FROM SQL QUERIES**
 
+### CUSTOMER DISTRIBUTION BY REGION 
 
-RECOMMENDATIONS
-Upsell Campaigns: Focus on converting Basic users in North and East regions to higher-tier plans.
-Customer Loyalty Programs: Retain Premium customers in South with incentives.
-Reposition Standard Plans: Strengthen the appeal of Standard plans in regions where they are underperforming (North, East, and South).
-Market Premium Plans Beyond South: Explore promotional strategies to introduce Premium offerings in other regions.
-Focus on Growth in the North and West: These regions need new marketing strategies to boost subscriptions and revenue.
-Retain and Expand in the East and South: These regions already perform well, but offering new product bundles or premium services could further increase profitability.
-Optimize Regional Campaigns: Tailoring campaigns to reflect each region’s preferences will ensure better engagement and more balanced revenue growth across all regions.
-*North:* Introduce lower-cost trials or discounts to attract new customers.
-*West:* Promote upgrades to higher-tier plans and explore why customer engagement may be stagnant.
-Retained customers (FALSE) provide an opportunity to upsell or cross-sell higher-tier plans.
-For customers with canceled subscriptions (TRUE), re-engagement campaigns (e.g., personalized discounts, limited-time offers) could reduce churn and drive renewals.
+East has the highest number of customers with 8,488, followed closely by South (8,446). North (8,433) and West (8,420) have slightly fewer customers, suggesting a more even customer distribution across all regions. Although customer numbers are distributed relatively evenly, the East region seems to be a key area of focus for customer engagement.
 
-Key Observations:
-Overall Revenue:
+### MOST POPULAR SUBSCRIPTION TYPE
 
-2022 Revenue: 40,538,438
-2023 Revenue: 27,001,737
-Grand Total: 67,540,175
-Insight:
+Basic subscription is the most popular type with 16,921 customers. This suggests that customers are primarily opting for affordable entry-level subscriptions, which may indicate price sensitivity. It could also signal that customers are testing the service before upgrading.
 
-2022 contributed 60% of total revenue, while 2023 dropped to 40%. There’s a noticeable decline in revenue between the two years, which could indicate lower customer engagement, reduced subscriptions, or external market challenges.
-Analysis of Subscription Categories:
-FALSE Group (2022-2023):
-Total Revenue: 23,720,255
-Basic Plan Revenue: 16,967,285
-East Region: 10,242,555
-North Region: 6,724,730
-Standard Plan (West Region): 6,752,970
-Insight:
+### SUBSCRIPTION DURATION
 
-The East region is a key driver for the Basic plan revenue in 2022, but it did not grow into 2023. Both North and East regions maintain a steady performance, but without any noticeable increase between the years.
-West region’s Standard plan revenue (6.75M) remains constant across the years, showing a stable but non-growing base.
-TRUE Group (2022-2023):
-Total Revenue: 16,818,183
-Basic Plan (North Region): 3,365,221
-Premium Plan (South Region): 10,126,800
-Standard Plan (West Region): 3,326,162
-Insight:
+No customers have a subscription period of less than 6 months or more than 12 months. The absence of short-term and long-term subscriptions implies that customers tend to stay for an average duration of 1 year (365 days). This might suggest that subscription plans are aligned with annual billing cycles, and customers are likely canceling or renewing annually.
 
-Premium Plan in the South region drives the majority of the TRUE category’s revenue, showing a concentration of high-value customers. This segment remains unchanged in 2023 with identical revenue, which may indicate that the customer base is consistent, but growth opportunities may be limited.
-Basic plan in the North region remains stable, generating the same revenue across 2022 and 2023, highlighting a lack of churn but also no expansion.
-Year-over-Year Trends (2022 vs 2023):
-No growth was recorded across all the major segments and regions from 2022 to 2023. The Premium plan in the South region maintained 10.1M revenue in both years.
-Standard plan in the West region stayed flat at 6.75M (FALSE) and 3.32M (TRUE) across both years.
-The Basic plan in the North showed no revenue growth from 3.36M between 2022 and 2023.
-Potential Issues and Opportunities:
-Flat Growth Across Years:
+### REVENUE CONTRIBUTION BY SUBSCRIPTION TYPE
 
-Several segments remained unchanged in revenue from 2022 to 2023. This suggests no net new customers or reduced customer acquisition efforts in these regions and plans.
-Focus on Premium Customers in South:
+Basic subscription contributes 33,776,735 of revenue, followed by Premium (16,899,064) and Standard (16,864,376). Despite being the most affordable, Basic plans generate the highest revenue. This indicates that high customer volume is compensating for the lower price point. Premium and Standard plans have nearly equal revenue, suggesting a well-balanced demand for higher-tier subscriptions.
 
-The Premium plan in South is a key revenue driver, but it didn’t grow between 2022 and 2023. There’s an opportunity to retain and upsell existing customers while expanding premium offerings.
-Basic Plan Opportunities in East and North:
+### TOP 3 REGIONS BY SUBSCRIPTION CANCELLATION
 
-East and North regions generate significant revenue through Basic plans but lack growth. These regions may benefit from targeted marketing to drive subscription upgrades or cross-sell Standard/Premium plans.
-West Region Stability:
+North leads with 5,067 cancellations, closely followed by South (5,064) and West (5,044). Cancellations are concentrated in these three regions, potentially signaling satisfaction issues or regional challenges that may need attention. Customer retention strategies should focus more on these areas to reduce churn.
 
-The West region maintains stable performance across both Standard and Basic plans. This is good, but it indicates a need for innovation or new campaigns to drive growth.
+### RENEWED SUBSCRIPTION AGAINST CANCELLED SUBSCRIPTION
+
+18,612 active subscriptions and 15,175 canceled subscriptions were recorded. This reflects a 44.9% churn rate (15,175 / (18,612 + 15,175)), which indicates a relatively high turnover. Customer retention efforts could focus on incentivizing renewals, especially in regions with higher cancellation rates.
+
+### KEY NOTES
+
+**Balanced Customer Distribution:** All four regions show relatively even customer distribution, with a slight edge for the East.
+
+**Price Sensitivity:** The dominance of the Basic plan suggests that customers prioritize affordability.
+
+**High Churn Rate:** Nearly 45% of subscriptions end in cancellations, which highlights the need for stronger customer retention strategies.
+
+**Stable Subscription Durations:** The absence of subscriptions shorter than 6 months or longer than 12 months hints at an annual subscription trend.
+
+
+## CONCLUSION
+
+
+## RECOMMENDATION
+
+**Retention Programs:** There should be a focus on reducing churn in North, South, and West regions through targeted campaigns.
+
+**Upsell Opportunities:** Basic plan customers should be encouraged to upgrade to higher tiers, as Premium and Standard plans generate comparable revenue.
+
+**Customer Feedback:** There is a need to Gather insights from canceled customers through survey to identify pain points and improve service offerings.
+
+**Regional Promotions:** Since East has the most customers, it is important to leverage this region for pilot campaigns or referral incentives
+
+**Customer Loyalty Programs:** Customers retention in South can be achieved with incentives.
+
+**Reposition Standard Plans:** It is important to strengthen the appeal of Standard plans in regions where they are underperforming (North, East, and South).
+
+**Market Premium Plans Beyond South:** Promotional strategies can be explored to introduce Premium offerings in other regions.
+
+**Focus on Growth in the North and West:** These regions need new marketing strategies to boost subscriptions and revenue.
+- *North:* Introduce lower-cost trials or discounts to attract new customers.
+- *West:* Promote upgrades to higher-tier plans and explore why customer engagement may be stagnant.
+
+**Retain and Expand in the East and South:** These regions already perform well, but offering new product bundles or premium services could further increase profitability.
+
+**Optimize Regional Campaigns:** Tailoring campaigns to reflect each region’s preferences will ensure better engagement and more balanced revenue growth across all regions.
+
+**Retained customers:** This customer segment provide an opportunity to upsell or cross-sell higher-tier plans.
+
+**Customers with canceled subscriptions:** This customer segment require re-engagement campaigns (e.g., personalized discounts, limited-time offers). This could reduce churn and drive renewals.
+
+
+
+
+
 Recommendations:
 Targeted Growth Campaigns:
 
