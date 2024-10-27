@@ -1,6 +1,44 @@
 # CAPSTONE-LITA-CUSTOMER-SUBSCRIPTION-PROJECT
 This repository is prepared to analyze customer subscription data to gain insights into revenue, subscription plans, regional distribution, customer behavior, and trends over time.
 
+## TABLE OF CONTENT
+- [PROJECT TITLE](PROJECT-TITLE)
+- [PROPOSED INSIGHT](PROPOSED-INSIGHT)
+- [DATA SOURCES](DATA-SOURCES)
+- [TOOLS USED](TOOLS-USED)
+- [DATA CLEANING AND PREPARATION](DATA-CLEANING-AND-PREPARATION)
+- [ANALYSIS AND INSIGHTS](ANALYSIS-AND-INSIGHTS)
+- [CONCLUSION](CONCLUSION)
+- [RECOMMENDATION](RECOMMENDATION)
+- [VISUALIZATION](VISUALIZATION)
+
+## PROJECT TITLE
+
+## **CUSTOMER SUBSCRIPTION DATA ANALYSIS FROM CAPSTONE** 
+
+This project focuses on analyzing subscription data to uncover valuable insights into revenue performance across different plans, regions, and years. It analyzed customer subscription data to gain insights into revenue, subscription plans, regional distribution, customer behavior, and trends over time.
+
+## PROPOSED INSIGHT
+
+The primary objective of this analysis is to identify patterns in customer subscriptions, highlight areas of stability or decline, and recommend strategies for growth. By evaluating the performance of Basic, Standard, and Premium plans across multiple regions which include East, North, West, and South, and tracking trends over 2022 and 2023, the project provides a comprehensive view of how subscription plans are contributing to overall business performance.
+
+Through this analysis, we aim to answer key business questions:
+
+- Which subscription plans generate the highest revenue?
+- How do different regions perform in terms of subscriptions and revenue growth?
+- Are there signs of revenue decline or stagnation that need to be addressed?
+- Which subscription type is most popular?
+- What is customer's demand trend across regions?
+
+This project showcases skills in data cleaning, SQL querying, and data visualization using tools like Power BI SQL and Microsoft Excel. 
+
+It also includes recommendations based on the insights uncovered to assist stakeholders in making data-driven decisions.
+
+The analysis and findings are documented in interactive dashboards, reports, and visualizations to ensure clarity and impact. This project demonstrates proficiency in transforming raw subscription data into actionable insights, making it a valuable addition to any business intelligence portfolio.
+
+## DATA SOURCES
+
+The data used for this project was provided by the admin of the Ladies in Tech Initiative as part of a prerequisite project for advancing my analytical journey and fulfilling certification and mentorship requirements.
 
 Key Observations:
 Overall Revenue:
