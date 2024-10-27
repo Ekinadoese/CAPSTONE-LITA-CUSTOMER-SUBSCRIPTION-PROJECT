@@ -382,7 +382,7 @@ North leads with 5,067 cancellations, closely followed by South (5,064) and West
 
 **Upsell Opportunities:** Basic plan customers should be encouraged to upgrade to higher tiers, as Premium and Standard plans generate comparable revenue.
 
-**Customer Feedback:** There is a need to Gather insights from canceled customers through survey to identify pain points and improve service offerings.
+**Customer Feedback:** There is a need to Gather insights from canceled customers through survey to identify pain points and improve service offerings. Analyze customer behavior in regions with flat growth (West and North) to identify barriers to expansion. Use this insight to design new subscription tiers or incentives.
 
 **Regional Promotions:** Since East has the most customers, it is important to leverage this region for pilot campaigns or referral incentives
 
@@ -396,11 +396,11 @@ North leads with 5,067 cancellations, closely followed by South (5,064) and West
 - *North:* Introduce lower-cost trials or discounts to attract new customers.
 - *West:* Promote upgrades to higher-tier plans and explore why customer engagement may be stagnant.
 
-**Retain and Expand in the East and South:** These regions already perform well, but offering new product bundles or premium services could further increase profitability.
+**Retain and Expand in the East and South:** These regions already perform well, but offering new product bundles or premium services could further increase profitability. Focus marketing efforts in South and East regions to promote Premium subscriptions and increase revenue beyond current levels.
 
 **Optimize Regional Campaigns:** Tailoring campaigns to reflect each region’s preferences will ensure better engagement and more balanced revenue growth across all regions.
 
-**Retained customers:** This customer segment provide an opportunity to upsell or cross-sell higher-tier plans.
+**Retained customers:** This customer segment provide an opportunity to upsell or cross-sell higher-tier plans. Launch customer loyalty programs for Basic and Standard plans to prevent churn and upsell into Premium offerings.
 
 **Customers with canceled subscriptions:** This customer segment require re-engagement campaigns (e.g., personalized discounts, limited-time offers). This could reduce churn and drive renewals.
 
@@ -408,13 +408,4 @@ North leads with 5,067 cancellations, closely followed by South (5,064) and West
 
 
 
-Recommendations:
-Targeted Growth Campaigns:
 
-Focus marketing efforts in South and East regions to promote Premium subscriptions and increase revenue beyond current levels.
-Churn Prevention & Customer Retention:
-
-Launch customer loyalty programs for Basic and Standard plans to prevent churn and upsell into Premium offerings.
-Data-Driven Insights:
-
-Analyze customer behavior in regions with flat growth (West and North) to identify barriers to expansion. Use this insight to design new subscription tiers or incentives.
