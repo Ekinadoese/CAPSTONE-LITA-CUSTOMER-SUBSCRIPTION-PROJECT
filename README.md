@@ -129,7 +129,7 @@ This regional pattern reflects customer segmentation. Marketing strategies can b
 
 ![image](https://github.com/user-attachments/assets/472af644-1195-4152-99de-c44a135ca28f)
 
-TOP PERFORMING REGION
+REGIONAL PERFORMANCE
 
 **The East region** is the top performer, with revenue slightly below 17 million. This indicates a strong customer base with high engagement. Marketing efforts here are yielding good returns, and there may be an opportunity to introduce premium offerings or bundled services to increase revenue further.
 
@@ -168,8 +168,115 @@ Standard plans appear to have a moderate balance between TRUE and FALSE, indicat
 
 Data loaded into SQL were retrieved to gain meaningful insight into customer trend and regional performance by writing corresponding queries. The below are all queries used to extract data
 
-'' 
+'' SELECT * FROM [CUSTOMER DATA CSV]
 
+**TOTAL NUMBER OF CUSTOMERS FROM EACH REGION**
+---NORTH
+SELECT COUNT(CUSTOMERNAME) AS TOTAL_NORTHERN_CUSTOMERS 
+FROM [dbo].[CUSTOMER DATA CSV] 
+WHERE [REGION] = 'NORTH'
+-- 
+TOTAL_NORTHERN_CUSTOMERS
+8433
+
+---SOUTH
+SELECT COUNT(CUSTOMERNAME) AS TOTAL_SOUTHERN_CUSTOMERS 
+FROM [dbo].[CUSTOMER DATA CSV] 
+WHERE [REGION] = 'SOUTH'
+-- 
+TOTAL_SOUTHERN_CUSTOMERS
+8446
+
+---EAST
+SELECT COUNT(CUSTOMERNAME) AS TOTAL_EASTERN_CUSTOMERS 
+FROM [dbo].[CUSTOMER DATA CSV] 
+WHERE [REGION] = 'EAST'
+-- 
+TOTAL_EASTERN_CUSTOMERS
+8488
+
+---WEST
+SELECT COUNT(CUSTOMERNAME) AS TOTAL_WESTERN_CUSTOMERS 
+FROM [dbo].[CUSTOMER DATA CSV] 
+WHERE [REGION] = 'WEST'
+-- 
+TOTAL_WESTERN_CUSTOMERS
+8420
+
+
+**MOST POPULAR SUBSCRIPTION TYPE**
+SELECT [SubscriptionType], COUNT(REGION) AS MOST_POPULAR_SUBSCRIPTION_TYPE 
+FROM [dbo].[CUSTOMER DATA CSV]
+GROUP BY [SubscriptionType]
+ORDER BY 2 DESC
+--- 
+Basic	16921
+
+**CUSTOMERS WITH SUBSCRIPTION LESS THAN 6 MONTHS**
+SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_LESS_6_MONTHS
+FROM [dbo].[CUSTOMER DATA CSV]
+WHERE [SUBSCRIPTION_PERIOD] < 183
+GROUP BY [CUSTOMERNAME]
+ORDER BY 2 DESC
+--- 
+NIL 
+
+**AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS**
+SELECT AVG(SUBSCRIPTION_PERIOD) AS AVG_SUB
+FROM [dbo].[CUSTOMER DATA CSV]
+---
+*365*
+
+**CUSTOMERS WITH SUBSCRIPTION LONGER THAN 12 MONTHS**
+SELECT [CUSTOMERNAME], COUNT(CustomerID) AS SUB_ABOVE_12_MONTS
+FROM [dbo].[CUSTOMER DATA CSV]
+WHERE [SUBSCRIPTION_PERIOD] > 366
+GROUP BY [CUSTOMERNAME]
+ORDER BY 2 DESC
+----- 
+*NIL*
+
+**TOTAL REVENUE BY SUBSCRIPTION TYPE**
+SELECT [SubscriptionType], SUM(Revenue) AS TOTAL_REVENUE_BY_SUBSCRIPTION_TYPE 
+FROM [dbo].[CUSTOMER DATA CSV]
+GROUP BY [SubscriptionType]
+ORDER BY 2 DESC
+---
+*Basic	33776735
+Premium	16899064
+Standard	16864376*
+
+**TOP 3 REGION BY SUBSCRIPTION CANCELLATION**
+SELECT TOP 3 [Region], COUNT(Canceled) AS TOP_3_CANCELLATION 
+FROM [dbo].[CUSTOMER DATA CSV]
+WHERE [Canceled] = 'TRUE'
+GROUP BY [Region]
+ORDER BY 2 DESC
+---
+*North	5067
+South	5064
+West	5044*
+
+**TOTAL NUMBER OF ACTIVE SUBSCRIPTION** -----
+SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
+from [dbo].[CUSTOMER DATA CSV]
+WHERE [Canceled] = 'FAlse'
+--- 
+*18612*
+
+**TOTAL NUMBER OF CANCELED SUBSCRIPTION** -----
+SELECT COUNT(canceled) AS TOTAL_ACTIVE_SUB
+from [dbo].[CUSTOMER DATA CSV]
+WHERE [Canceled] = 'TRUE'
+--- 
+*15175*
+
+### SUMMARY OF SQL QUERIES
+
+![image](https://github.com/user-attachments/assets/648639a3-dd67-402d-9dc5-0d047f9421e7)
+
+
+**FINDINGS FROM THE DATA RETRIEVED FROM SQL QUERIES**
 
 
 RECOMMENDATIONS
