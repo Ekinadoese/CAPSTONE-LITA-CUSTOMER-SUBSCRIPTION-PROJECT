@@ -177,14 +177,10 @@ Premium Plan (South Region): 10,126,800
 
 Standard Plan (West Region): 3,326,162
 
-Premium Plan in the South region drives the majority of the Cancelled subscription revenue, showing a concentration of high-value customers. This segment remains unchanged in 2023 with identical revenue, which may indicate that the customer base is consistent, but growth opportunities may be limited.
+Premium Plan in the South region drives the majority of the Cancelled subscription revenue. This segment remains unchanged in 2023 with identical revenue, which may indicate that the customer base is consistent, but growth opportunities may be limited.
 Basic plan in the North region remains stable, generating the same revenue across 2022 and 2023, highlighting a lack of churn but also no expansion.
 
 **YEAR OVER YEAR TREND (2022 - 2023)**
-
-No growth was recorded across all the major segments and regions from 2022 to 2023. The Premium plan in the South region maintained 10.1M revenue in both years.
-Standard plan in the West region stayed flat at 6.75M (RENEWED) and 3.32M (CANCELLED) across both years.
-The Basic plan in the North showed no revenue growth from 3.36M between 2022 and 2023.
 
 Several segments remained unchanged in revenue from 2022 to 2023. This suggests no net new customers or reduced customer acquisition efforts in these regions and plans.
 
@@ -375,6 +371,22 @@ North leads with 5,067 cancellations, closely followed by South (5,064) and West
 
 ## CONCLUSION
 
+an in-depth analysis of the subscription data has surfaced key insights into customer behavior, regional dynamics, and revenue patterns, enabling us to derive actionable business strategies.
+
+- **Regional Customer Distribution:**
+
+Customers are evenly distributed across all regions, with the East showing a marginally higher number of subscribers. This uniform distribution indicates broad market penetration, though East could serve as a focal point for regional growth initiatives.
+
+- **Subscription Type Preference and Revenue Contribution:**
+
+The Basic subscription is overwhelmingly popular, not only attracting the most customers but also generating the highest revenue. This suggests a price-sensitive customer base and highlights the effectiveness of the Basic plan in driving volume. However, revenue from Premium and Standard plans is nearly identical, indicating stable demand across higher tiers, which represents a strong upsell opportunity.
+
+- **Churn and Retention Challenges:**
+
+With a churn rate of around 45%, a significant portion of customers are canceling their subscriptions, especially in the North, South, and West regions. This high cancellation rate underscores the need for targeted retention efforts. Addressing this churn, particularly in these regions, could stabilize and potentially grow the customer base, reducing acquisition costs over time.
+Customer Subscription Duration:
+
+Customers typically maintain subscriptions for around one year, with no substantial variation toward shorter or longer terms. This points to an annual cycle preference, which aligns with a common billing period, making the case for retention programs that encourage renewals near the one-year mark.
 
 ## RECOMMENDATION
 
