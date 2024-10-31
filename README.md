@@ -371,7 +371,7 @@ North leads with 5,067 cancellations, closely followed by South (5,064) and West
 
 ## CONCLUSION
 
-an in-depth analysis of the subscription data has surfaced key insights into customer behavior, regional dynamics, and revenue patterns, enabling us to derive actionable business strategies.
+An in-depth analysis of the subscription data has surfaced key insights into customer behavior, regional dynamics, and revenue patterns, enabling us to derive actionable business strategies.
 
 - **Regional Customer Distribution:**
 
