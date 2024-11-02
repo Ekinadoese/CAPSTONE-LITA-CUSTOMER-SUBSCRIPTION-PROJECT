@@ -1,4 +1,4 @@
-# CAPSTONE-LITA-CUSTOMER-SUBSCRIPTION-PROJECT
+![WEST BI FIG](https://github.com/user-attachments/assets/d3c671e9-2933-49fe-a759-e3d1e75ace64)# CAPSTONE-LITA-CUSTOMER-SUBSCRIPTION-PROJECT
 This repository is prepared to analyze customer subscription data to gain insights into revenue, subscription plans, regional distribution, customer behavior, and trends over time.
 
 ## TABLE OF CONTENT
@@ -416,8 +416,92 @@ Customers typically maintain subscriptions for around one year, with no substant
 
 **Customers with canceled subscriptions:** This customer segment require re-engagement campaigns (e.g., personalized discounts, limited-time offers). This could reduce churn and drive renewals.
 
+## VISUALIZATION
 
+### FIGURES AT A GLANCE
 
+### SUMMARY
 
+![BI FIG SUMMARY](https://github.com/user-attachments/assets/0ff83ba8-8100-4e3a-a4b4-d7822e3f18ba)
+
+### SUMMARY BY REGION
+
+- **NORTH**
+
+  ![NORTH BI FIG](https://github.com/user-attachments/assets/4ae2d39a-b9ef-4bdd-bd2f-5d92bff68b2b)
+
+- **SOUTH**
+  
+  ![SOUTH BI FIG](https://github.com/user-attachments/assets/192ca856-b7af-4a39-8b41-47fad1616066)
+
+- **EAST**
+
+  ![EAST BI FIG](https://github.com/user-attachments/assets/0ad3093c-2592-44cf-9ce8-c1c5f04bfbcc)
+
+- **WEST**
+
+![WEST BI FIG](https://github.com/user-attachments/assets/e540a72d-582a-45a5-b6a1-ba79afa67563)
+
+### SUMMARY BY PRODUCTS
+
+- **BASIC**
+
+  ![BASIC BI SUMMARY](https://github.com/user-attachments/assets/6ab69909-ad49-45f6-a10e-ee2689fc8254)
+
+- **STANDARD**
+  
+  ![STANDARD BI SUMMARY](https://github.com/user-attachments/assets/a2b816fd-b8c7-4cb7-a04c-202096ba64f5)
+
+- **PREMIUM**
+
+![PREMIUM BI SUMMARY](https://github.com/user-attachments/assets/611f9079-ff0d-47f8-b20a-441140e87f57)
+
+### STATISTICS
+
+![BI STATS VISUAL](https://github.com/user-attachments/assets/813b17d4-d480-435d-925c-07748186b02b)
+
+### 2022 STATISTICS
+
+![BI STATS VISUAL](https://github.com/user-attachments/assets/ee704cc4-eb26-44fd-a460-e368dfe3b9b2)
+
+### 2023 STATISTICS
+
+![BI 2023-STAT](https://github.com/user-attachments/assets/7b5eebd6-5472-4fbd-bfb3-42e3e845f1d4)
+
+### YEAR OVER YEAR TRENDS
+
+![BI MONTH SUMMARY](https://github.com/user-attachments/assets/c43d8a78-f4e2-4cdd-a89b-89486074f636)
+
+### MONTHLY SUBSCRIPTION PER REGION
+
+- **NORTH**
+
+  ![BI NORTH MONTH SUMMARY](https://github.com/user-attachments/assets/faf4a3df-3fff-442a-99f5-971233dff8de)
+
+- **SOUTH**
+
+  ![BI SOUTH MONTH SUMMARY](https://github.com/user-attachments/assets/3616e359-11d8-4143-93bf-f3ea4f8e9f68)
+
+- **EAST**
+
+  ![BI EAST MONTH SUMMARY](https://github.com/user-attachments/assets/cc0bd476-81fa-4441-9289-114f763bffa9)
+
+- **WEST**
+
+![BI WEST MONTH SUMMARY](https://github.com/user-attachments/assets/33a7f467-0e12-4966-96f0-ecce438dbe9b)
+
+### MONTHLY SUBSCRIPTION PER PRODUCT
+
+- **BASIC**
+
+![BI BASIC MONTH SUMMARY](https://github.com/user-attachments/assets/df6c8b68-0a3a-449d-994b-2ee328e7ce6f)
+
+- **STANDARD**
+
+![BI STANDARD MONTH SUMMARY](https://github.com/user-attachments/assets/8d2cf1a4-6d5c-4c57-a847-6dc68afdad53)
+
+- **PREMIUM**
+
+![BI PREMIUM MONTH SUMMARY](https://github.com/user-attachments/assets/bb3a3ad9-4d20-41c1-816e-c8605eb1c7a3)
 
 
